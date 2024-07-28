@@ -7,10 +7,10 @@ public class Main {
 
     public static boolean isPalindrome (int number) {
         number =  Math.abs(number);
-        char[] rakamlar = String.valueOf(number).toCharArray();
-        String reverse = " ";
-        for (int i=rakamlar.length-1; i>=0; i--) {
-            reverse += rakamlar[i];
+        char[] digits = String.valueOf(number).toCharArray();
+        String reverse = "";
+        for (int i=digits.length-1; i>=0; i--) {
+            reverse += digits[i];
         }
            return reverse.equalsIgnoreCase(String.valueOf(number));
     }
@@ -70,14 +70,4 @@ public class Main {
     }
      return numberToText.trim();
   }
-
-
-
-
-
-
-
-
-
-
 }
